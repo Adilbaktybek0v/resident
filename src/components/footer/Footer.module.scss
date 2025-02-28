@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Footer {
+  padding: 63px 0 18px;
+  margin-top: 160px;
+  background: #131212;
+  color: #fff;
+  div {
+    .Footer_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-bottom: 4px solid;
+      border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%) 1;
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+    }
+
+    section {
+      display: flex;
+      color: #fff;
+      margin-bottom: 45px;
+
+      .Footer_desc {
+        margin-right: 221px;
+
+        p {
+          color: #e2e2e2;
+          font-family: "Jost", serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20.23px;
+          letter-spacing: 0%;
+        }
+      }
+
+      .Footer_category {
+        margin-right: 84px;
+
+        ul {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          list-style: none;
+
+          li {
+            a {
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20.23px;
+              letter-spacing: 0%;
+              color: #e2e2e2;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .Footer_company {
+      margin-right: 158px;
+
+      ul {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+
+        li {
+          a {
+            font-family: "Jost", serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20.23px;
+            letter-spacing: 0%;
+            color: #e2e2e2;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .Footer_contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-end;
+      text-align: end;
+      gap: 10px;
+
+      h3 {
+        color: #fff;
+        font-family: Georgia;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22.72px;
+        letter-spacing: 0%;
+      }
+
+      span {
+        font-family: Jost;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20.23px;
+        letter-spacing: 0%;
+        color: #979797;
+      }
+
+      a {
+        font-family: Jost;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17.34px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: Auto;
+
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}

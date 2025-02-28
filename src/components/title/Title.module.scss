@@ -1,0 +1,28 @@
+.Title{
+    margin-top: 60px;
+    div{
+        main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 4px solid;
+            border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%) 1;
+      
+            h2 {
+              font-family: Georgia;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 27.27px;
+              letter-spacing: 0%;
+              text-transform: uppercase;
+            }
+      
+            button {
+              border: none;
+              background: transparent;
+              cursor: pointer;
+            }
+          }
+    }
+}

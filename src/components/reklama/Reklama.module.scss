@@ -1,0 +1,38 @@
+.Reklama {
+  margin-top: 160px;
+
+  div {
+    display: flex;
+    gap: 20px;
+
+    main {
+      width: 232px;
+      display: flex;
+      flex-direction: column;
+      gap: 202px;
+
+      h2 {
+        font-family: Georgia;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 27.27px;
+        letter-spacing: 0%;
+        color: #131212;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%) 1;
+
+      }
+      nav{
+        display: flex;
+        gap: 16px;
+
+        button{
+            border: none;
+            background: transparent;
+        }
+      }
+    }
+  }
+}

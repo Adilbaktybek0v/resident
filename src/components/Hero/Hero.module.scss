@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap");
+
+.Hero {
+  background-image: url(../../img/banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1140px;
+  padding: 360px 395px 52px 110px;
+  margin: 0 auto;
+  position: relative;
+
+  h1 {
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36.36px;
+    letter-spacing: 0%;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    font-family: "Jost", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.12px;
+    letter-spacing: 0%;
+  }
+  button {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff4d;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .btnLeft {
+    left: 24px;
+    top: 50%;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .btnRigth {
+    right: 24px;
+    top: 50%;
+  }
+
+  ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #FFFFFF66;
+
+    }
+  }
+}
