@@ -16,7 +16,6 @@
       background: #131212;
       gap: 44px;
       margin-bottom: 100px;
-      
 
       .ContactTop {
         display: flex;
@@ -130,12 +129,592 @@
       }
 
       p {
-        font-family: 'Jost', serif;
+        font-family: "Jost", serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 17.34px;
         letter-spacing: 0%;
         color: #979797;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .Contact {
+    margin-top: 40px;
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      .img {
+        width: 480px;
+        height: 460px;
+      }
+
+      main {
+        width: 480px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        background: #131212;
+        gap: 25px;
+        margin-bottom: 30px;
+
+        .ContactTop {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            margin-bottom: 4px;
+
+            width: 99px;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+            text-transform: uppercase;
+            padding: 7px 16px 6px;
+            font-family: "Raleway", serif;
+            color: #ffffff;
+            border: none;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+          }
+
+          h2 {
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27.27px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          .ContactSchedule {
+            color: #979797;
+            font-family: "Jost", serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20.23px;
+            letter-spacing: 0%;
+          }
+        }
+        .ContactEmail {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .Email {
+            color: #ffffff;
+
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18.18px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: Auto;
+          }
+        }
+
+        .ContactFrame {
+          display: flex;
+          flex-direction: column;
+          gap: 5.5px;
+
+          .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .listTitle {
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              letter-spacing: 0%;
+              color: #979797;
+            }
+
+            .listText {
+              width: 124px;
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              text-align: end;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .list:nth-child(1) {
+          .listText {
+            font-size: 14px;
+            line-height: 23.12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .Contact {
+    margin-top: 40px;
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      .img {
+        width: 460px;
+        height: 440px;
+      }
+
+      main {
+        width: 460px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        background: #131212;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .ContactTop {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            margin-bottom: 4px;
+
+            width: 99px;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+            text-transform: uppercase;
+            padding: 7px 16px 6px;
+            font-family: "Raleway", serif;
+            color: #ffffff;
+            border: none;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+          }
+
+          h2 {
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27.27px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          .ContactSchedule {
+            color: #979797;
+            font-family: "Jost", serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20.23px;
+            letter-spacing: 0%;
+          }
+        }
+        .ContactEmail {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .Email {
+            color: #ffffff;
+
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18.18px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: Auto;
+          }
+        }
+
+        .ContactFrame {
+          display: flex;
+          flex-direction: column;
+          gap: 5.5px;
+
+          .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .listTitle {
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              letter-spacing: 0%;
+              color: #979797;
+            }
+
+            .listText {
+              width: 124px;
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              text-align: end;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .list:nth-child(1) {
+          .listText {
+            font-size: 14px;
+            line-height: 23.12px;
+          }
+        }
+      }
+
+      .ContactSocial {
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+        }
+
+        p {
+          font-family: "Jost", serif;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 17.34px;
+          letter-spacing: 0%;
+          color: #979797;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 935px) {
+  .Contact {
+    margin-top: 40px;
+    div {
+      display:flex;
+      flex-direction: column;
+      
+      align-items: center;
+      gap: 10px;
+
+      .img {
+        width: 460px;
+        height: 440px;
+      }
+
+      main {
+        width: 460px;
+        height: 440px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background: #131212;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .ContactTop {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+          gap: 10px;
+
+          button {
+            margin-bottom: 4px;
+            align-items: start;
+
+            width: 99px;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+            text-transform: uppercase;
+            padding: 7px 16px 6px;
+            font-family: "Raleway", serif;
+            color: #ffffff;
+            border: none;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+          }
+
+          h2 {
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27.27px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          .ContactSchedule {
+            color: #979797;
+            font-family: "Jost", serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20.23px;
+            letter-spacing: 0%;
+          }
+        }
+        .ContactEmail {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 16px;
+
+          .Email {
+            color: #ffffff;
+
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18.18px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: Auto;
+          }
+        }
+
+        .ContactFrame {
+          display: flex;
+          flex-direction: column;
+          gap: 5.5px;
+
+          .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .listTitle {
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              letter-spacing: 0%;
+              color: #979797;
+            }
+
+            .listText {
+              width: 124px;
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              text-align: end;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .list:nth-child(1) {
+          .listText {
+            font-size: 14px;
+            line-height: 23.12px;
+          }
+        }
+      }
+
+      .ContactSocial {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        nav {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+        }
+
+        p {
+          font-family: "Jost", serif;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 17.34px;
+          letter-spacing: 0%;
+          color: #979797;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .Contact {
+    margin-top: 40px;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .img {
+        width: 328px;
+        height: 328px;
+      }
+
+      main {
+        width: 328px;
+        height: 519px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background: #131212;
+        gap: 40px;
+        margin-bottom: 30px;
+
+        .ContactTop {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            width: 99px;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+            text-transform: uppercase;
+            padding: 7px 16px 6px;
+            font-family: "Raleway", serif;
+            color: #ffffff;
+            border: none;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+          }
+
+          h2 {
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27.27px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          .ContactSchedule {
+            color: #979797;
+            font-family: "Jost", serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20.23px;
+            letter-spacing: 0%;
+          }
+        }
+        .ContactEmail {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .Email {
+            color: #ffffff;
+
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18.18px;
+            letter-spacing: 0%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: Auto;
+          }
+        }
+
+        .ContactFrame {
+          display: flex;
+          flex-direction: column;
+          gap: 5.5px;
+
+          .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .listTitle {
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              letter-spacing: 0%;
+              color: #979797;
+            }
+
+            .listText {
+              width: 124px;
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20.23px;
+              text-align: end;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .list:nth-child(1) {
+          .listText {
+            font-size: 14px;
+            line-height: 23.12px;
+          }
+        }
+      }
+
+      .ContactSocial {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        nav {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+        }
+
+        p {
+          font-family: "Jost", serif;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 17.34px;
+          letter-spacing: 0%;
+          color: #979797;
+        }
       }
     }
   }

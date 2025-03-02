@@ -7,7 +7,7 @@ function Title({title}) {
   return (
     <section className={scss.Title}>
       <div className="container">
-        <main>
+        <main className={scss.main}> 
         <h2>{title}</h2>
           <button>
             <img src={next} alt="" />

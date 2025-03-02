@@ -31,7 +31,8 @@ function Footer() {
     <footer className={scss.Footer}>
       <div className="container">
         <main className={scss.Footer_top}>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className={scss.img}/>
+          <h2>Rresident</h2>
           <nav>
             <a>
               <img src={fes} alt="" />
@@ -55,7 +56,8 @@ function Footer() {
               расширить свой кругозор и узнать что-то новое
             </p>
           </main>
-          <main className={scss.Footer_category}>
+          <main className={scss.innerBlock}>
+               <main className={scss.Footer_category}>
             <h4>Категории:</h4>
             <ul>{link}</ul>
           </main>
@@ -63,6 +65,8 @@ function Footer() {
             <h4>Компания:</h4>
             <ul>{li}</ul>
           </main>
+          </main>
+       
           <main className={scss.Footer_contact}>
             <h3>г. Бишкек, ул. Нуркамала 29</h3>
             <span>График работы: с 9:00 до 20:00</span>

@@ -35,7 +35,7 @@ function Contact() {
   return (
     <section className={scss.Contact}>
       <div className="container">
-        <img src={interview} alt="" />
+        <img src={interview} alt=""  className={scss.img}/>
         <main>
           <div className={scss.ContactTop}>
             <button>контакты</button>

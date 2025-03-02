@@ -7,6 +7,7 @@ import BlockRest from '../components/block_rest/BlockRest'
 import BlockRestTwo from '../components/block_rest/BlockRestTwo'
 import Reklama from '../components/reklama/Reklama'
 import Footer from '../components/footer/Footer'
+import Interview from '../components/interview/Interview'
 
 
 
@@ -18,6 +19,7 @@ export default function HomPage() {
       <Popular/>
       <RealEstate />
       <BlockRest/>
+      <Interview/>
       <BlockRestTwo/>
       <Reklama/>
       <Footer/>

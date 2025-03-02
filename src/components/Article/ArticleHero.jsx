@@ -23,7 +23,7 @@ function ArticleHero() {
         </nav>
         
        
-        <img src={banner} alt="" />
+        <img className={scss.img} src={banner} alt="" />
       </div>
     </section>
   );

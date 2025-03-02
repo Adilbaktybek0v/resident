@@ -5,7 +5,7 @@
     display: flex;
     gap: 20px;
 
-    main {
+    .main {
       width: 232px;
       display: flex;
       flex-direction: column;
@@ -21,18 +21,29 @@
         padding-bottom: 20px;
         text-transform: uppercase;
         border-bottom: 4px solid;
-        border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%) 1;
-
+        border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%)
+          1;
       }
-      nav{
+      nav {
         display: flex;
         gap: 16px;
 
-        button{
-            border: none;
-            background: transparent;
+        button {
+          border: none;
+          background: transparent;
         }
       }
+    }
+
+    .mainRek{
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      overflow: scroll;
+    }
+
+    .mainRek::-webkit-scrollbar{
+      display: none;
     }
   }
 }

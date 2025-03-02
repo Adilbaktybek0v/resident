@@ -37,9 +37,38 @@ const data = [
         date:"1 февраля 2024",
         min:"5 мин"
     },
+    {
+        img: img3,
+        content: "продукты",
+        title:"Lustra_kg - люстры премиум качестваМосква - жилой дом премиум-класса",
+        date:"1 февраля 2024",
+        min:"5 мин"
+    },
+    {
+        img: img4,
+        content: "продукты",
+        title:`Миссия компании "Matkasym" - создавать товары для уюта в доме и комфорта в городе`,
+        date:"1 февраля 2024",
+        min:"5 мин"
+    },
 ]
 
 function BlockRestTwo() {
+   const list = data.map((e, index) => (
+      <li key={index}>
+        <img src={e.img} alt="" />
+        <nav>
+        <span className={scss.span}>{e.content}</span>
+        <h4>{e.title}</h4>
+        <p>
+          <span>{e.date}</span>
+          <p className={scss.dot}></p>
+          <span>{e.min}</span>
+        </p>
+        </nav>
+        
+      </li>
+    ));
    const li = data.map((e, index)=>(
          <li key={index}>
              <img src={e.img} alt="" />
@@ -58,8 +87,11 @@ function BlockRestTwo() {
                  <h3>Tesoro Home - текстильная компания в области декора с 2005 года</h3>
                  <p><span>8 февраля 2024</span><div className={scss.dot}></div><span>4 мин</span></p>
              </main>
-             <ul>
+             <ul className={scss.ul}>
                  {li}
+             </ul>
+             <ul >
+                 {list}
              </ul>
          </article>
        </div>

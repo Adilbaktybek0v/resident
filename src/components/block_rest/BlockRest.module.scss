@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 .BlockRest {
-
   div {
     display: flex;
     flex-direction: column;
@@ -36,7 +35,7 @@
       main {
         width: 560px;
         height: 600px;
-        
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -92,10 +91,10 @@
         }
       }
 
-      ul {
+      .ul {
         width: 560px;
         height: 600px;
-       overflow: hidden;
+        overflow: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         list-style: none;
@@ -106,7 +105,6 @@
           flex-direction: column;
           gap: 14px;
           width: 270px;
-      
 
           img {
             width: 270px;
@@ -144,7 +142,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-family: 'Jost', serif;
+            font-family: "Jost", serif;
             font-weight: 400;
             font-size: 10px;
             line-height: 14.45px;
@@ -157,6 +155,320 @@
               height: 4px;
               border-radius: 50%;
               background-color: #979797;
+            }
+          }
+        }
+      }
+
+      .ul::-webkit-scrollbar {
+        display: none;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .BlockRest {
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      article {
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        main {
+          width: 100%;
+          height: 600px;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding: 463px 87px 20px 20px;
+
+          .content {
+            text-decoration: none;
+            font-family: Raleway;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+            padding: 6px 16px;
+            color: #fff;
+            text-transform: uppercase;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+          }
+
+          h3 {
+            margin-top: 16px;
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 22.72px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          p {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: serif;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 13.3px;
+            letter-spacing: 0%;
+            color: #e2e2e2;
+            text-transform: uppercase;
+
+            .dot {
+              display: block;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: #e2e2e2;
+            }
+          }
+        }
+
+        .ul {
+          width: 100%;
+          height: 600px;
+          overflow: auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          list-style: none;
+          gap: 20px;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            width: 100%;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100px;
+            }
+
+            .span {
+              text-transform: uppercase;
+              font-family: Jost;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 17.34px;
+              letter-spacing: 0%;
+
+              background: linear-gradient(
+                90.95deg,
+                #af802a -0.52%,
+                #dfc464 126.88%
+              );
+
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            h4 {
+              font-family: Georgia;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 18.18px;
+              letter-spacing: 0%;
+              color: #131212;
+            }
+
+            p {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-family: "Jost", serif;
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 14.45px;
+              letter-spacing: 0%;
+              color: #979797;
+              text-transform: uppercase;
+
+              .dot {
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #979797;
+              }
+            }
+          }
+        }
+
+        .ul::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .BlockRest {
+    margin-bottom: 350px;
+    padding: 0 15px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        main {
+          width: 100%;
+          height: 260px;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding: 125px 85px 16px 16px;
+
+          .content {
+            text-decoration: none;
+            font-family: Raleway;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14.09px;
+            letter-spacing: 0%;
+            padding: 6px 16px;
+            color: #fff;
+            text-transform: uppercase;
+            background: linear-gradient(
+              90.95deg,
+              #af802a -0.52%,
+              #dfc464 126.88%
+            );
+          }
+
+          h3 {
+            margin-top: 16px;
+            font-family: "Georgia", serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.72px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          p {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: serif;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 13.3px;
+            letter-spacing: 0%;
+            color: #e2e2e2;
+            text-transform: uppercase;
+
+            .dot {
+              display: block;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: #e2e2e2;
+            }
+          }
+        }
+        .ul {
+          display: none;
+        }
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          gap: 14px;
+
+          li {
+            display: flex;
+
+            gap: 14px;
+            width: 100%;
+            height: 100px;
+
+
+            nav {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+
+              .span {
+                text-transform: uppercase;
+                font-family: 'Jost', serif;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17.34px;
+                letter-spacing: 0%;
+
+                background: linear-gradient(
+                  90.95deg,
+                  #af802a -0.52%,
+                  #dfc464 126.88%
+                );
+
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              h4 {
+                overflow: hidden;
+                font-family: Georgia;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18.18px;
+                letter-spacing: 0%;
+                color: #131212;
+              }
+
+              p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-family: "Jost", serif;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 14.45px;
+                letter-spacing: 0%;
+                color: #979797;
+                text-transform: uppercase;
+
+                .dot {
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 50%;
+                  background-color: #979797;
+                }
+              }
+            }
+            img {
+              object-fit: cover;
+              width: 100px;
+              height: 100%;
             }
           }
         }

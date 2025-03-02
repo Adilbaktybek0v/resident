@@ -8,7 +8,7 @@ function Reklama() {
     <section className={scss.Reklama}>
         <div className="container">
             
-                <main>
+                <main className={scss.main}>
                     <h2>Предложения от компании</h2>
                      <nav>
                         
@@ -16,12 +16,15 @@ function Reklama() {
                         <button><img src={nextend} alt="" /></button>
                      </nav>
                 </main>
+                <main className={scss.mainRek}>
+                 <img src={img} alt="" />
                 <img src={img} alt="" />
                 <img src={img} alt="" />
                 <img src={img} alt="" />
                 <img src={img} alt="" />
                 <img src={img} alt="" />
-                <img src={img} alt="" />
+                </main>
+               
                 
             
         </div>

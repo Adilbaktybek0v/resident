@@ -38,6 +38,20 @@ const data = [
     date: "1 февраля 2024",
     min: "5 мин",
   },
+  {
+    img: img3,
+    content: "роскошный отдых",
+    title: "Москва - жилой дом премиум-класса",
+    date: "1 февраля 2024",
+    min: "5 мин",
+  },
+  {
+    img: img4,
+    content: "роскошный отдых",
+    title: "UNO City - новый город-курорт в Кыргызстане",
+    date: "1 февраля 2024",
+    min: "5 мин",
+  }
 ];
 
 function BlockRest() {
@@ -53,10 +67,26 @@ function BlockRest() {
       </p>
     </li>
   ));
+  const list = data.map((e, index) => (
+    <li key={index}>
+      <img src={e.img} alt="" />
+      <nav>
+      <span className={scss.span}>{e.content}</span>
+      <h4>{e.title}</h4>
+      <p>
+        <span>{e.date}</span>
+        <p className={scss.dot}></p>
+        <span>{e.min}</span>
+      </p>
+      </nav>
+      
+    </li>
+  ));
   return (
     <section className={scss.BlockRest}>
+      <Title title={"Роскошный отдых"}/>
       <div className="container">
-        <Title title={"Роскошный отдых"}/>
+        
         <article>
           <main style={{ backgroundImage: `url(${photo})` }}>
             <Link to={"/art"} className={scss.content}>роскошный отдых</Link>
@@ -67,7 +97,8 @@ function BlockRest() {
               <span>5 мин</span>
             </p>
           </main>
-          <ul>{li}</ul>
+          <ul className={scss.ul}>{li}</ul>
+          <ul >{list}</ul>
         </article>
       </div>
     </section>
