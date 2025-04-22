@@ -1,22 +1,27 @@
 import React from "react";
 import scss from "./Title.module.scss"
 import next from "../../img/nextRealEstate.svg"
+import { Link } from "react-router-dom";
 
 
-function Title({title}) {
+function Title({title, to}) {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <section className={scss.Title}>
-      <div className="container">
+    
         <main className={scss.main}> 
         <h2>{title}</h2>
-          <button>
+        {to != "" && <Link className={scss.button} to={to} onClick={scrollToTop()}>
             <img src={next} alt="" />
-          </button>
+          </Link>}
+         
         </main>
          
         
-      </div>
-    </section>
+     
   );
 }
 

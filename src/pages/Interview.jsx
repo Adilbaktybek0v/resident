@@ -1,80 +1,46 @@
-import Cart from "../components/cartFlex/Cart"
-import Header from "../components/Header/Header"
+import { data } from "react-router-dom";
+import Cart from "../components/cartFlex/CartApi";
 import Title from "../components/title/Title";
-
+import axios from "axios";
 import img1 from "../img/photo18.svg";
 import img2 from "../img/photo19.svg";
 import img3 from "../img/photo20.svg";
 import img4 from "../img/photo21.svg";
+import { useState, useEffect } from "react";
 
 
-const data = [
-  {
-    img: img1,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img2,
-    title: "Анна Шишкина - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img3,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img4,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img1,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img2,
-    title: "Анна Шишкина - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img3,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
-  {
-    img: img4,
-    title: "Владислав Попов - основатель дизайн-студии Freedom Group",
-    content: "интервью",
-    date: "1 февраля 2024",
-    min: "3 мин",
-  },
+
+
+function Interview({fetchDetail}) {
+  const [data, setData]= useState([])
+  const [loading, setLoading]= useState(false)
+
+
+  const interviews = Object.values(data)
+  .flat() 
+  .filter(item => item.cat_title === "Интервью");
+
  
-];
+useEffect(() => {
+  const fetchData = async()=>{
+    setLoading(true)
+    try{
+      const res = await axios.get("https://resident.kg/api/ru/list/status?search=api_list_status_list")
+      setData(res.data)
+    }catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  }
 
-
-function Interview() {
+  fetchData()
+  }, []);
   return (
-    <section>
-        <Header/>
-        <Title title={"интервью"}/>
-        <Cart data={data}/>
+    <section className="container">
+       
+        <Title title={"интервью"}  to={""}/>
+        <Cart data={interviews} fetchDetail={fetchDetail}/>
       
     </section>
   )

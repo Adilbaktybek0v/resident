@@ -9,7 +9,7 @@ import img4 from "../../img/photo8.svg";
 import Title from "../title/Title";
 import { Link } from "react-router-dom";
 
-const data = [
+const d = [
   {
     img: img1,
     content: "роскошный отдых",
@@ -38,68 +38,40 @@ const data = [
     date: "1 февраля 2024",
     min: "5 мин",
   },
-  {
-    img: img3,
-    content: "роскошный отдых",
-    title: "Москва - жилой дом премиум-класса",
-    date: "1 февраля 2024",
-    min: "5 мин",
-  },
-  {
-    img: img4,
-    content: "роскошный отдых",
-    title: "UNO City - новый город-курорт в Кыргызстане",
-    date: "1 февраля 2024",
-    min: "5 мин",
-  }
 ];
 
-function BlockRest() {
-  const li = data.map((e, index) => (
+function BlockRest({data, loading}) {
+  const li = d.map((e, index) => (
     <li key={index}>
-      <img src={e.img} alt="" />
-      <span className={scss.span}>{e.content}</span>
+      <span className={scss.text}>{e.content}</span>
       <h4>{e.title}</h4>
-      <p>
+      <p className={scss.date}>
         <span>{e.date}</span>
         <p className={scss.dot}></p>
         <span>{e.min}</span>
       </p>
     </li>
   ));
-  const list = data.map((e, index) => (
-    <li key={index}>
-      <img src={e.img} alt="" />
-      <nav>
-      <span className={scss.span}>{e.content}</span>
-      <h4>{e.title}</h4>
-      <p>
-        <span>{e.date}</span>
-        <p className={scss.dot}></p>
-        <span>{e.min}</span>
-      </p>
-      </nav>
-      
-    </li>
-  ));
+ 
   return (
+   
     <section className={scss.BlockRest}>
-      <Title title={"Роскошный отдых"}/>
       <div className="container">
-        
-        <article>
-          <main style={{ backgroundImage: `url(${photo})` }}>
-            <Link to={"/art"} className={scss.content}>роскошный отдых</Link>
-            <h3>Отель Орион - не только место для отдыха</h3>
-            <p>
-              <span>1 февраля 2024</span>
-              <div className={scss.dot}></div>
-              <span>5 мин</span>
-            </p>
-          </main>
-          <ul className={scss.ul}>{li}</ul>
-          <ul >{list}</ul>
-        </article>
+        <Title title={"Роскошный отдых"} to={`/luxury-life`} />
+        <main className={scss.innerBlock}>
+        {!loading && data && (
+          
+  <section className={scss.banner}>
+    <img className={scss.image} src={data.img} alt="banner" />
+    <p className={scss.content}>
+      <Link className={scss.button}>{data.cat_title}</Link>
+      <h3>{data.title}</h3>
+      <span className={scss.bannerData}>{data.created_at}</span>
+    </p>
+  </section>
+)}
+      <ul>{li}</ul>
+      </main>
       </div>
     </section>
   );

@@ -1,39 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import scss from "./Interview.module.scss";
-import img1 from "../../img/foto.svg";
-import next from "../../img/next.svg";
-import { Link } from "react-router-dom";
 
-function Interview() {
+import Cart from "../cartFlex/CartApi";
+import Title from "../title/Title";
+
+// const data = [
+//   {
+//     img: img1,
+//     title: "Владислав Попов - основатель дизайн-студии Freedom Group",
+//     content: "интервью",
+//     date: "1 февраля 2024",
+//     min: "3 мин",
+//   },
+//   {
+//     img: img2,
+//     title: "Анна Шишкина - основатель дизайн-студии Freedom Group",
+//     content: "интервью",
+//     date: "1 февраля 2024",
+//     min: "3 мин",
+//   },
+//   {
+//     img: img3,
+//     title: "Владислав Попов - основатель дизайн-студии Freedom Group",
+//     content: "интервью",
+//     date: "1 февраля 2024",
+//     min: "3 мин",
+//   },
+//   {
+//     img: img4,
+//     title: "Владислав Попов - основатель дизайн-студии Freedom Group",
+//     content: "интервью",
+//     date: "1 февраля 2024",
+//     min: "3 мин",
+//   },
+
+// ];
+
+function Interview({data, fetchDetail}) {
+ 
+  // const [data, setData]= useState({Interview:[]})
+  // const [loading, setLoading]= useState(false)
+
+  // useEffect(() => {
+  //   const fetchData = async()=>{
+  //    setLoading(true)
+  //    try{
+  //      const res = await axios.get(`${url}/list/status?search=api_list_status_list`)
+  //      setData(res.data)
+  //    }catch (error) {
+  //      console.error(error);
+  //    } finally {
+  //      setLoading(false);
+  //    }
+  //   }
+ 
+  //   fetchData()
+  //  }, []);
   return (
     <section className={scss.Interview}>
       <div className="container">
-        <ul className={scss.innerBlock}>
-          <li>
-            <Link  to={"/6"} className={scss.content}>интервью</Link>
-            <h4>Владислав Попов - основатель дизайн-студии Freedom Group</h4>
-            <p className={scss.p}>
-              <span className={scss.date}>1 февраля 2024</span>
-              <p className={scss.dot}></p>
-              <span className={scss.min}>5 мин</span>
-            </p>
-            <a href="#">читать статью</a>
-          </li>
-        </ul>
-        <aside>
-          <img src={img1} alt="" />
-        </aside>
-        <ul className={scss.ul}>
-          <li className={scss.li}></li>
-          <li className={scss.li}></li>
-          <li className={scss.li}></li>
-          <li className={scss.li}></li>
-          <li className={scss.li}></li>
-        </ul>
-        <nav>
-            <button className={scss.left}><img src={next} alt="" /></button>
-            <button ><img src={next} alt="" className={scss.next}/></button>
-        </nav>
+        <Title title={"Интервью"} to={"intervju"} />
+        <Cart data={data} fetchDetail={fetchDetail}/>
       </div>
     </section>
   );

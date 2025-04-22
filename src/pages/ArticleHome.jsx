@@ -1,15 +1,15 @@
 import React from 'react'
-import Header from '../components/Header/Header'
+
 import ArticleHero from '../components/Article/ArticleHero'
-import ArtAbaut from '../components/ArticleAbaut/ArtAbaut'
 
 
-function ArticleHome() {
+
+function ArticleHome({detail, fetchDetail}) {
   return (
     <section>
-        <Header/>
-        <ArticleHero/>
-        <ArtAbaut/>
+        
+        <ArticleHero detail={detail} fetchDetail={fetchDetail}/>
+       
     </section>
   )
 }

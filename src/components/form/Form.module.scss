@@ -1,0 +1,82 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+
+  h2 {
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #131212;
+  }
+
+  input {
+    padding: 11px 20px;
+    max-width: 474px;
+    color: #979797;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid #979797;
+    outline: none;
+    transition: all ease 0.5s;
+
+    &:focus {
+      border: 1.5px solid transparent;
+      // background: linear-gradient(90.95deg, #AF802A -0.52%, #DFC464 126.88%);
+      border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%);
+      border-image-slice: 1;
+      color: #131212;
+    }
+  }
+
+  textarea {
+    padding: 11px 20px;
+    max-width: 474px;
+    height: 80px;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #979797;
+    border: 1px solid #979797;
+    outline: none;
+    transition: all ease 0.5s;
+
+    &:focus {
+      border: 1.5px solid transparent;
+      // background: linear-gradient(90.95deg, #AF802A -0.52%, #DFC464 126.88%);
+      border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%);
+      border-image-slice: 1;
+      color: #131212;
+    }
+  }
+
+  button {
+    display: inline-block;
+    width: auto;
+    align-self: start;
+    margin: 0;
+    padding: 14px 37.5px;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+   
+ 
+    background: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%);
+  }
+}

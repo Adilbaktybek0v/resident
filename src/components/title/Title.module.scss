@@ -1,7 +1,5 @@
-.Title{
-    margin-top: 60px;
-    div{
-        main{
+
+        .main{
           width: 100%;
             margin: 0;
             padding: 0;
@@ -17,66 +15,31 @@
               line-height: 27.27px;
               letter-spacing: 0%;
               text-transform: uppercase;
+              @media (max-width:800px) {
+                font-size: 22px;
+              }
+              @media (max-width:600px) {
+                font-size: 20px;
+              }
+              @media (max-width:330px) {
+                font-size: 16px;
+              }
+             
             }
       
-            button {
+            .button {
               border: none;
               background: transparent;
               cursor: pointer;
+
+              img{
+                width: 30px;
+                height: 30px;
+              }
             }
           }
-    }
-}
-
-@media screen and (max-width: 500px){
- 
-    div {
-      
-      .main { 
-      
-        h2 {
-          text-transform: uppercase;
-          color: #131212;
-          font-family: Georgia;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 27.27px;
-          letter-spacing: 0%;
-        }
-      }
    
-      
-      }
-    }
-  
-
-
-@media screen and (max-width: 460px){
-
-  .Title{
-    padding: 16px;
-  }
-    div {
-    
-      .main {
-        width: 100%;
-        padding-bottom: 20px;
-        border-bottom: 4px solid;
-        border-image: linear-gradient(90.95deg, #af802a -0.52%, #dfc464 126.88%) 1;
-  
-        h2 {
-          text-transform: uppercase;
-          color: #131212;
-          font-family: Georgia;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 27.27px;
-          letter-spacing: 0%;
-        }
-      }
-     
-    }
-  }
 
  
-  
+    
+     

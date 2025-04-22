@@ -39,8 +39,9 @@ function AbGrid() {
     ))
   return (
     <section className={scss.AbGrid}>
-        <Title title={"Преимущества"}/>
+      
         <div className="container">
+        <Title title={"Преимущества"}/>
             <ul>{block}</ul>
         </div>
       

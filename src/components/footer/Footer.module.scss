@@ -8,6 +8,8 @@
   div {
     .Footer_top {
       display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
@@ -29,14 +31,18 @@
 
     section {
       display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
       color: #fff;
       margin-bottom: 45px;
 
       .Footer_desc {
-        margin-right: 251px;
+       
 
         p {
           color: #e2e2e2;
+          width: 300px;
           font-family: "Jost", serif;
           font-weight: 400;
           font-size: 14px;
@@ -47,6 +53,7 @@
 
       .innerBlock {
         display: flex;
+        flex-wrap: wrap;
         gap: 84px;
         .Footer_category {
           ul {
@@ -81,7 +88,7 @@
       }
 
       .Footer_company {
-        margin-right: 158px;
+        
 
         ul {
           margin-top: 20px;
@@ -108,6 +115,10 @@
         flex-direction: column;
         justify-content: start;
         align-items: flex-end;
+
+        @media (max-width:1150px) {
+          align-items: flex-start;
+        }
         text-align: end;
         gap: 10px;
 
